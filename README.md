@@ -9,3 +9,5 @@ The main features of the app are:
 * Sign In/Sign Up functionality using Devise
 
 * View other users' posts
+
+* Gems used: Bootstrap-sass, Simple Form, Devise
