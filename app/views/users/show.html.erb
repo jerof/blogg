@@ -1,0 +1,14 @@
+<div class="col-md-6 col-md-offset-3">
+  <div class="well">
+    <h1><%= @user.email %></h1>
+    <p>Joined Blogg <%= time_ago_in_words(@user.created_at) %> ago</p>
+      <% if @user.posts.blank? %>
+        <h2>This user has not written any posts yet</h2>
+      <% else %>
+        <% @user.posts.each do |post| %>
+          <h3><%= link_to post.title, post_path(post) %></h3>
+        <% end %>
+      <% end %>
+  </div>
+  <%= link_to "Back to Users", users_path, class: "btn btn-default" %>
+</div>

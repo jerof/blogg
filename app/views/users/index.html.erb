@@ -1,0 +1,10 @@
+<div class="col-md-6 col-md-offset-3">
+  <h1 align="center">List of all Bloggers</h1>
+  <% @users.each do |user| %>
+    <div class="well">
+      <h3><%= user.email %></h3>
+      <p><%= link_to pluralize(user.posts.count, "post"), user_path(user) %> written</p>
+      <p>Joined Blogger <%= time_ago_in_words(user.created_at) %> ago</p>
+    </div>
+  <% end %>
+</div>
