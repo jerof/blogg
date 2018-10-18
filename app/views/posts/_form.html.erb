@@ -1,5 +1,5 @@
 <%= simple_form_for @post do |f| %>
-  <%= f.input :title %>
-  <%= f.input :body, as: :text %>
-  <%= f.button :submit, class: "btn btn-primary" %>
+  <%= f.input :title, autofocus: true %>
+  <%= f.input :body, as: :text, autofocus: true, :input_html => { :style => 'width: 100%', :rows => 10 }%>
+  <%= f.button :submit, class: "btn btn-lg btn-primary" %>
 <% end %>
