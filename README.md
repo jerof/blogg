@@ -1,24 +1,11 @@
-# README
+# Ruby on Rails Blog application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This blog app was built as a side-project to learn Ruby on Rails.
 
-Things you may want to cover:
+The main features of the app are:
 
-* Ruby version
+* Write blog posts
 
-* System dependencies
+* Sign In/Sign Up functionality using Devise
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* View other users' posts
